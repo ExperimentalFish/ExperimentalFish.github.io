@@ -1,4 +1,4 @@
-$(".container").mousemove(function(e){
+$("body").mousemove(function(e){
   var cursorXpos = e.pageX; 
   var cursorYpos = e.pageY; 
   var xposToString = String(cursorXpos);
