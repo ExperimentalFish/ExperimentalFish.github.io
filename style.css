@@ -4,6 +4,8 @@ body {
 	background: #262626;
 	font-family: arial;
   	white-space: nowrap;
+	overscroll-behavior: none;
+	overflow: hidden;
 }
 
 .loader {
