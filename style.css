@@ -7,6 +7,12 @@ body{
 	text-size-adjust: auto;
 	text-size-adjust: 80%;
 }
+
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 0.5rem;
+  }
+
 .loader{
 	position: absolute;
 	top: 50%;
