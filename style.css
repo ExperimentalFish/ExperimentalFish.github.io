@@ -4,14 +4,8 @@ body{
 	background: #262626;
 	font-family: arial;
   	white-space: nowrap;
-	text-size-adjust: auto;
-	text-size-adjust: 80%;
+	font-size:8vw
 }
-
-@media only screen and (max-width: 500px) {
-  body{
-    font-size: 0.5rem;
-  }
 
 .loader{
 	position: absolute;
