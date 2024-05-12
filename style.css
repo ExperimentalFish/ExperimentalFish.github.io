@@ -22,14 +22,10 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: arial;
+	background: #262626;
   	white-space: nowrap;
 	position:relative;  
   	cursor:none;
-}
-
-.container{
-	height:100vh;
-	background: #262626;
 }
 
 .loader {
