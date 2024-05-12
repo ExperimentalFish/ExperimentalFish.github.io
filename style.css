@@ -3,7 +3,9 @@ body{
 	padding: 0;
 	background: #262626;
 	font-family: arial;
-  white-space: nowrap;
+  	white-space: nowrap;
+	text-size-adjust: auto;
+	text-size-adjust: 80%;
 }
 .loader{
 	position: absolute;
