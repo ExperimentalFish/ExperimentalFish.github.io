@@ -8,7 +8,7 @@ body {
 
 .loader {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
@@ -27,6 +27,9 @@ body {
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 15s linear infinite;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .loader h2 {
@@ -36,6 +39,9 @@ body {
   text-transform: uppercase;
   font-size: (3vw,3em);
   color: rgba(150,150,150);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 @keyframes animate {
@@ -71,4 +77,10 @@ body {
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .cursor {
+        display: 'none'
+    }
 }
