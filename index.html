@@ -1,113 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coding and Engineering Projects</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Project Showcase</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#projects-section">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about-section">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-section">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <header class="jumbotron text-center bg-primary text-white">
-    <h1 class="display-4">Coding and Engineering Projects</h1>
-    <p class="lead">Explore my latest projects and engineering endeavors.</p>
-  </header>
-
-  <div id="projects-section" class="container py-5">
-    <h2 class="text-center mb-4">Projects</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="project1.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">A brief description of Project 1.</p>
-            <a href="#" class="btn btn-primary">View Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="project2.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">A brief description of Project 2.</p>
-            <a href="#" class="btn btn-primary">View Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="project3.jpg" class="card-img-top" alt="Project 3">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">A brief description of Project 3.</p>
-            <a href="#" class="btn btn-primary">View Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="about-section" class="bg-light py-5">
+<div class="header">
     <div class="container">
-      <h2 class="text-center mb-4">About</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id eleifend lacus, ac tempor mauris.
-        Morbi eu ligula nec velit gravida auctor. Integer hendrerit semper pulvinar. Sed vitae ullamcorper arcu.
-        Quisque.</p>
+    <ul class="breadcrumb">
+    <li class="breadcrumb__item breadcrumb__item-firstChild">
+    <span class="breadcrumb__inner">
+    <span class="breadcrumb__title">Home</span>
+    </span>
+    </li>
+    <li class="breadcrumb__item">
+    <span class="breadcrumb__inner">
+    <span class="breadcrumb__title">About Me</span>
+    </span>
+    </li>
+    <li class="breadcrumb__item">
+    <span class="breadcrumb__inner">
+    <span class="breadcrumb__title">Projects</span>
+    </span>
+    </li>
+    <li class="breadcrumb__item breadcrumb__item-lastChild">
+    <span class="breadcrumb__inner">
+    <span class="breadcrumb__title">Contact Me</span>
+    </span>
+    </li>
+    <li class="breadcrumb__item breadcrumb__item-lastChild">
+    <span class="breadcrumb__inner">
+    <span class="breadcrumb__title">Coming Soon</span>
+    </span>
+    </li>
+    </ul>
     </div>
-  </div>
+    
+    <div class="inner-header flex">
+        <img src="logo.png" width=150px height=150px>
+        <h1>Experimental Fish</h1>
+    </div>
+</div>
 
-  <div id="contact-section" class="container py-5">
-    <h2 class="text-center mb-4">Contact</h2>
-    <form>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name">
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" rows="5" placeholder="Enter your messageHere's the continuation of the HTML code:
-
-"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-
-  <footer class="bg-dark text-white text-center py-3">
-    &copy; 2024 Project Showcase
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+    </svg>
+</div>
 </body>
 
 </html>
