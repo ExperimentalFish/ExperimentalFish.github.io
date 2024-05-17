@@ -1,0 +1,200 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|PT+Sans+Narrow:400,700|Play:400,700|Ubuntu+Condensed&display=swap&subset=cyrillic');
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:5em;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/*NavBar*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|PT+Sans+Narrow:400,700|Play:400,700|Ubuntu+Condensed&display=swap&subset=cyrillic');
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+ul, li {
+list-style: none;
+}
+
+html, body {
+height: 100%;
+background: #efefef;
+font-family: 'Oswald', sans-serif;  
+}
+
+.container {
+display: flex;
+flex-direction: column;
+height: 13vh;
+width: 100%;
+min-width: 480px;
+padding: 0 40px;
+}
+
+.breadcrumb {
+display: flex;
+border-radius: 10px;
+margin: auto;
+text-align: center;
+top: 50%;
+width: 100%;
+height: 40px;
+transform: translateY(-50%);
+z-index: 1;
+justify-content: center;
+}
+
+
+.breadcrumb__item {
+height: 100%;
+background-color: white;
+color: #252525;
+font-family: 'Oswald', sans-serif;
+border-radius: 7px;
+letter-spacing: 1px;
+transition: all 0.3s ease;
+text-transform: uppercase;
+position: relative;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+font-size: 16px;
+transform: skew(-21deg);
+box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+margin: 5px;
+padding: 0 40px;
+cursor: pointer;
+}
+
+
+.breadcrumb__item:hover {
+background: #004fa3;
+color: #FFF;
+}
+
+.breadcrumb__item:active {
+  background: #003166;
+}
+
+
+.breadcrumb__inner {
+display: flex;
+flex-direction: column;
+margin: auto;
+z-index: 2;
+transform: skew(21deg);  
+}
+
+.breadcrumb__title {
+font-size: 16px;
+text-overflow: ellipsis;  
+overflow: hidden;
+white-space: nowrap;  
+}
+
+
+@media all and (max-width: 1000px) {
+.breadcrumb {
+height: 35px;
+}
+
+.breadcrumb__title{
+font-size: 11px;
+}
+.breadcrumb__item {
+padding: 0 30px;
+}
+}
+
+@media all and (max-width: 710px) {
+.breadcrumb {
+height: 30px;
+}
+.breadcrumb__item {
+padding: 0 20px;
+}
+
+}
