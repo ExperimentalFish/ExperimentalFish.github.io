@@ -1,37 +1,38 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
-<div class="header">
-    <div class="container">
-    <ul class="breadcrumb">
-    <li class="breadcrumb__item breadcrumb__item-firstChild">
-    <span class="breadcrumb__inner">
-    <span class="breadcrumb__title">Home</span>
-    </span>
-    </li>
-    <li class="breadcrumb__item">
-    <span class="breadcrumb__inner">
-    <span class="breadcrumb__title">About Me</span>
-    </span>
-    </li>
-    <li class="breadcrumb__item">
-    <span class="breadcrumb__inner">
-    <span class="breadcrumb__title">Projects</span>
-    </span>
-    </li>
-    <li class="breadcrumb__item breadcrumb__item-lastChild">
-    <span class="breadcrumb__inner">
-    <span class="breadcrumb__title">Contact Me</span>
-    </span>
-    </li>
-    <li class="breadcrumb__item breadcrumb__item-lastChild">
-    <span class="breadcrumb__inner">
-    <span class="breadcrumb__title">Coming Soon</span>
-    </span>
-    </li>
-    </ul>
+<header>
+    <div class="navbar">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item breadcrumb__item-firstChild">
+                <span class="breadcrumb__inner">
+                    <span class="breadcrumb__title">Home</span>
+                </span>
+            </li>
+            <li class="breadcrumb__item">
+                <span class="breadcrumb__inner">
+                    <span class="breadcrumb__title">About Me</span>
+                </span>
+            </li>
+            <li class="breadcrumb__item">
+                <span class="breadcrumb__inner">
+                    <span class="breadcrumb__title">Projects</span>
+                </span>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item-lastChild">
+                <span class="breadcrumb__inner">
+                    <span class="breadcrumb__title">Contact Me</span>
+                </span>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item-lastChild">
+                <span class="breadcrumb__inner">
+                    <span class="breadcrumb__title">Coming Soon</span>
+                </span>
+            </li>
+        </ul>
     </div>
     
     <div class="inner-header flex">
@@ -40,20 +41,89 @@
     </div>
     
     <div>
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-        </g>
-    </svg>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
     </div>
-</div>
+</header>
+    
+<main>
+    <div class="About_Me">
+        <h2> About Me </h2>
+        <p> Welcome to Experimental Fish! <br> I'm thrilled to have you here and excited to share a bit about myself. <br> I'm a passionate individual with a strong interest in math and electronics. <br> Here, I aim to share my knowledge, insights, and experiments with you. <br> Through my thesis and project showcases, I hope to inspire and engage fellow math enthusiasts and electronics enthusiasts alike. <br> Let's explore the world of math and electronics together! (<a href="aboutMe.html">Read more</a>)
+        </p>
+    </div>
 
-<body></body>
+    <div class="Projects">
+        <div class="ocean">
+            <h2> Projects </h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="coming-soon-2579123_640.jpg" style="width:75%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="coming-soon-2579123_640.jpg" style="width:75%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="coming-soon-2579123_640.jpg" style="width:75%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
 
+    <div class="Contact_Me">
+        <h2> Contact Me </h2>
+        <form class="cf">
+          <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name">
+            <input type="email" id="input-email" placeholder="Email address">
+            <input type="text" id="input-subject" placeholder="Subject">
+          </div>
+          <div class="half right cf">
+            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+          </div>  
+          <input type="submit" value="Submit" id="input-submit">
+        </form>
+    </div>
+
+    <div class="trans"></div>
+    
+    <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+        <a href="https://www.instagram.com/owo.haha/"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/experimentalFish"><i class="bi bi-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a class="link-1">Address: Hong Kong</a>
+
+            <a>Email: experimentalfish123@gmail.com</a>
+
+            <a>Credit: Goodkatz</a>
+        </p>
+    </div>
+</main>  
 </html>
