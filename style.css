@@ -1,6 +1,10 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|PT+Sans+Narrow:400,700|Play:400,700|Ubuntu+Condensed&display=swap&subset=cyrillic');
 
+html {
+  scroll-behavior: smooth;
+ }
+
 body {
   margin:0;
   background-color: #FFFFFF;
@@ -49,7 +53,8 @@ header {
   position:relative;
   width: 100%;
   height:15vh;
-  margin-bottom:-7px; /height: 100vh!important*Fix for safari gap*/
+  margin-bottom:-7px; 
+  height:100vh!important; /*Fix for safari gap*/
   min-height:100px;
   max-height:150px;
 }
@@ -92,8 +97,6 @@ header {
 }
 
 /*NavBar*/
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500|PT+Sans+Narrow:400,700|Play:400,700|Ubuntu+Condensed&display=swap&subset=cyrillic');
-
 * {
 margin: 0;
 padding: 0;
@@ -129,24 +132,40 @@ justify-content: center;
 
 
 .breadcrumb__item {
-height: 100%;
-background-color: white;
-color: #252525;
-font-family: 'Oswald', sans-serif;
-border-radius: 7px;
-letter-spacing: 1px;
-transition: all 0.3s ease;
-text-transform: uppercase;
-position: relative;
-display: inline-flex;
-justify-content: center;
-align-items: center;
-font-size: 16px;
-transform: skew(-21deg);
-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-margin: 5px;
-padding: 0 40px;
-cursor: pointer;
+  height: 100%;
+  background-color: white;
+  color: #252525;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 7px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  transform: skew(-21deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  margin: 5px;
+  padding: 0; /* Reset padding to prevent double padding */
+  cursor: pointer;
+  min-width: 120px; /* Set a minimum width for the button */
+}
+
+.breadcrumb__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure the anchor tag takes up the full width of the breadcrumb item */
+  height: 100%; /* Ensure the anchor tag takes up the full height of the breadcrumb item */
+  color: inherit; /* Inherit text color from breadcrumb item */
+  text-decoration: none; /* Remove the underline from the link */
+  text-align: center; /* Center the text within the button */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Prevent text overflow */
+  padding: 0 30px; /* Add padding inside the anchor tag for consistent spacing */
+  z-index: 1;
 }
 
 
@@ -160,7 +179,7 @@ color: #FFF;
 }
 
 
-.breadcrumb__inner {
+.breadcrumb__inner{
 display: flex;
 flex-direction: column;
 margin: auto;
@@ -242,8 +261,6 @@ main {
 }
 
 .Projects{
-  padding-bottom: 40px;
-  
   h2{
     padding-top: 60px;
   }
@@ -251,7 +268,7 @@ main {
 
 .ocean {
   position: relative;
-  height: 70vh;
+  height: auto;
   overflow: hidden;
   background-image: linear-gradient(0deg, #022244, #58c8da);
 }
@@ -356,9 +373,7 @@ main {
 
 .Contact_Me{
   background-color: #022244;
-  margin-top: -6vh;
   padding-bottom: 10vh;
-  margin-bottom: -7vh;
   padding-top: 10vh;
 
   h2{
