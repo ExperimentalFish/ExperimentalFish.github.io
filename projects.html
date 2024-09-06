@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects page</title>
+    <title>projects page</title>
     <link rel="stylesheet" href="projects_style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -14,19 +14,55 @@
     <header>
         <div class="navbar">
             <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="#down">Contact Me</a></li>
+                <li class="breadcrumb__item breadcrumb__item-firstChild">
+                    <a href="index.html">
+                        <span class="breadcrumb__inner">
+                            <span class="breadcrumb__title">Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="breadcrumb__item">
+                    <a href="blog.html">
+                        <span class="breadcrumb__inner">
+                            <span class="breadcrumb__title">Blog</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="breadcrumb__item">
+                    <a href="projects.html">
+                        <span class="breadcrumb__inner">
+                            <span class="breadcrumb__title">Projects</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="breadcrumb__item breadcrumb__item-lastChild">
+                    <a href="#down">
+                        <span class="breadcrumb__inner">
+                            <span class="breadcrumb__title">Contact Me</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="breadcrumb__item breadcrumb__item-lastChild">
+                    <a href="maintenance.html">
+                        <span class="breadcrumb__inner">
+                            <span class="breadcrumb__title">Resources</span>
+                        </span>
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
+        <!-- Existing Content: About Me -->
+        <section id="about-me">
+            <h2>(Maintenance projects page)</h2>
+            <p>In case if you still want to look at my projects. (This page will be updated.)</p>
+        </section>
 
         <!-- New Content: projects Posts -->
-        <section id="project-posts">
+        <section id="projects-posts">
             <h2>Projects</h2>
             <div class="project-container">
                 <!-- Example projects Post -->
@@ -37,7 +73,7 @@
                 </div>
                 <!-- Add more projects posts here -->
             </div>
-            
+
             <h2>Mini-projects</h2>
             <div class="project-container">
                 <!-- Example projects Post -->
@@ -45,11 +81,13 @@
                     <h3>A fully functional square (Finished)</h3>
                     <p>It was a boring day as I had finished my summer work. And suddenly think out of an idea of making a square in desmos with four parametrized line with extra parameter to do scaling, rotating and translating...</p>
                     <a href="full-post.html">Read More</a>
+		        </div>
+	   	    </div>
         </section>
 
         <!-- Existing Content: Contact Form -->
-        <section id="contact-me">
-            <h2>Contact Me</h2>
+        <div id="down" class="Contact_Me">
+            <h2> Contact Me </h2>
             <form class="cf">
                 <div class="half left cf">
                     <input type="text" id="input-name" placeholder="Name">
@@ -57,23 +95,33 @@
                     <input type="text" id="input-subject" placeholder="Subject">
                 </div>
                 <div class="half right cf">
-                    <textarea id="input-message" placeholder="Message"></textarea>
+                    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
                 </div>
                 <input type="submit" value="Submit" id="input-submit">
             </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>Address: Hong Kong | Email: experimentalfish123@gmail.com</p>
-            <div class="social-media">
-                <a href="https://www.instagram.com/owo.haha/"><i class="bi bi-instagram"></i></a>
-                <a href="https://github.com/experimentalFish"><i class="bi bi-github"></i></a>
-            </div>
         </div>
-    </footer>
+    
+        <div class="trans"></div>
+    
+        <footer class="footer-distributed">
+    
+            <div class="footer-right">
+    
+                <a href="https://www.instagram.com/eycp736b2c0tn64qmvjk/"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/experimentalFish"><i class="bi bi-github"></i></a>
+    
+            </div>
+    
+            <div class="footer-left">
+    
+                <p class="footer-links">
+                    <a class="link-1">Address: Hong Kong</a>
+    
+                    <a>Email: experimentalfish123@gmail.com</a>
+    
+                    <a>Credit: Goodkatz</a>
+                </p>
+            </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>
