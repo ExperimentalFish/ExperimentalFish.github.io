@@ -38,6 +38,20 @@ header {
     text-align: center;
 }
 
+/* White outline for headings */
+h2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.4rem;
+}
+
+/* White outline for "Contact Me" section */
+#down h2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 2rem;
+}
+
 /* NavBar */
 * {
     margin: 0;
