@@ -38,6 +38,29 @@ header {
     text-align: center;
 }
 
+/* White outline for headings */
+h2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.4rem;
+}
+
+/* Box style for About Me (similar to Blog posts) */
+.about-container {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ececec;
+    margin-bottom: 40px;
+}
+
+/* White outline for "Contact Me" section */
+#down h2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 2rem;
+}
+
 /* NavBar */
 * {
     margin: 0;
@@ -191,6 +214,12 @@ main {
 #blog-posts .blog-post h3 {
     margin-top: 0;
 }
+
+/* Add margin below Blog heading for separation */
+#blog-posts h2 {
+    margin-bottom: 10px;
+}
+
 
 #blog-posts .blog-post p {
     font-size: 1rem;
