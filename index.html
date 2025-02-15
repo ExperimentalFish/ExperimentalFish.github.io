@@ -1,146 +1,164 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experimental Fish - Math and Electronics Projects">
+    <title>Experimental Fish</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<header>
-    <div class="navbar">
-        <ul class="breadcrumb">
-            <li class="breadcrumb__item breadcrumb__item-firstChild">
-                <a href="index.html">
-                    <span class="breadcrumb__inner">
-                        <span class="breadcrumb__title">Home</span>
-                    </span>
-                </a>
-            </li>
-            <li class="breadcrumb__item">
-                <a href="blog.html">
-                    <span class="breadcrumb__inner">
-                        <span class="breadcrumb__title">Blog</span>
-                    </span>
-                </a>
-            </li>
-            <li class="breadcrumb__item">
-                <a href="projects.html">
-                    <span class="breadcrumb__inner">
-                        <span class="breadcrumb__title">Projects</span>
-                    </span>
-                </a>
-            </li>
-            <li class="breadcrumb__item breadcrumb__item-lastChild">
-                <a href="#down">
-                    <span class="breadcrumb__inner">
-                        <span class="breadcrumb__title">Contact Me</span>
-                    </span>
-                </a>
-            </li>
-            <li class="breadcrumb__item breadcrumb__item-lastChild">
-                <a href="maintenance.html">
-                    <span class="breadcrumb__inner">
-                        <span class="breadcrumb__title">Resources</span>
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </div>
 
-    <div class="inner-header flex">
-        <img src="logo.png" width=150px height=150px>
-        <h1>Experimental Fish</h1>
-    </div>
-
-    <div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-            </g>
-        </svg>
-    </div>
-</header>
-
-<main>
-    <div class="About_Me">
-        <h2> About Me </h2>
-        <p> Welcome to Experimental Fish! <br> I'm thrilled to have you here and excited to share a bit about myself.
-            <br> I'm a passionate individual with a strong interest in math and electronics. <br> Here, I aim to share
-            my knowledge, insights, and experiments with you. <br> Through my thesis and project showcases, I hope to
-            inspire and engage fellow math enthusiasts and electronics enthusiasts alike. <br> Let's explore the world
-            of math and electronics together! (<a href="aboutMe.html">Read more</a>)
-        </p>
-    </div>
-
-    <div class="Projects">
-        <div class="ocean">
-            <h2> Projects </h2>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="coming-soon-2579123_640.jpg" style="width:75%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="coming-soon-2579123_640.jpg" style="width:75%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="coming-soon-2579123_640.jpg" style="width:75%">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Mobile Menu Toggle Button -->
+            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+              <i class="bi bi-list"></i>
             </div>
-            <br>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+        
+            <!-- Breadcrumb Menu (Desktop) -->
+            <ul class="breadcrumb">
+              <li class="breadcrumb__item breadcrumb__item-firstChild">
+                <a href="index.html"><span class="breadcrumb__inner"><span class="breadcrumb__title">Home</span></span></a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="blog.html"><span class="breadcrumb__inner"><span class="breadcrumb__title">Blog</span></span></a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="projects.html"><span class="breadcrumb__inner"><span class="breadcrumb__title">Projects</span></span></a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="#down"><span class="breadcrumb__inner"><span class="breadcrumb__title">Contact Me</span></span></a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="resources.html"><span class="breadcrumb__inner"><span class="breadcrumb__title">Resources</span></span></a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="login.html"><span class="breadcrumb__inner"><span class="breadcrumb__title">Login</span></span></a>
+              </li>
+            </ul>
+        
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu">
+              <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#down">Contact Me</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
             </div>
+          </nav>
+
+        <div class="inner-header flex">
+            <img src="logo.png" width="150px" height="150px" alt="Logo">
+            <h1>Experimental Fish</h1>
         </div>
-    </div>
-    <script src="script.js"></script>
-    </div>
 
-    <div id="down" class="Contact_Me">
-        <h2> Contact Me </h2>
-        <form class="cf">
-            <div class="half left cf">
-                <input type="text" id="input-name" placeholder="Name">
-                <input type="email" id="input-email" placeholder="Email address">
-                <input type="text" id="input-subject" placeholder="Subject">
-            </div>
-            <div class="half right cf">
-                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-            </div>
-            <input type="submit" value="Submit" id="input-submit">
-        </form>
-    </div>
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    </header>
 
-    <div class="trans"></div>
+    <main>
+        <section class="About_Me">
+            <h2> About Me </h2>
+            <p>Welcome to Experimental Fish!<br>I'm thrilled to have you here and excited to share a bit about myself.<br>I'm a passionate individual with a strong interest in math and electronics.<br>Here, I aim to share my knowledge, insights, and experiments with you.<br>Through my thesis and project showcases, I hope to inspire and engage fellow math enthusiasts and electronics enthusiasts alike.<br>Let's explore the world of math and electronics together! (<a href="aboutMe.html">Read more</a>)</p>
+        </section>
+
+        <section class="Projects">
+            <div class="ocean">
+                <h2> Projects </h2>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="coming-soon-2579123_640.jpg" alt="Coming Soon" style="width:75%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="coming-soon-2579123_640.jpg" alt="Coming Soon" style="width:75%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="coming-soon-2579123_640.jpg" alt="Coming Soon" style="width:75%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="down" class="Contact_Me">
+            <h2>Contact Me</h2>
+            <div class="form-wrapper">
+              <form class="contact-form" action="contact.php" method="post">
+                <fieldset>
+                  <legend>Contact Information</legend>
+                  <div class="form-group">
+                    <label for="name">Name<span aria-hidden="true">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email<span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">Subject<span aria-hidden="true">*</span></label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                  </div>
+                </fieldset>
+          
+                <fieldset>
+                  <div class="form-group">
+                    <label for="message">Message<span aria-hidden="true">*</span></label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                  </div>
+                </fieldset>
+          
+                <div class="form-group">
+                  <button type="submit" id="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+        <div class="trans"></div>
+    </main>
 
     <footer class="footer-distributed">
-
         <div class="footer-right">
-
             <a href="https://www.instagram.com/eycp736b2c0tn64qmvjk/"><i class="bi bi-instagram"></i></a>
             <a href="https://github.com/experimentalFish"><i class="bi bi-github"></i></a>
-
         </div>
 
         <div class="footer-left">
-
             <p class="footer-links">
-                <a class="link-1">Address: Hong Kong</a>
-
-                <a>Email: experimentalfish123@gmail.com</a>
-
-                <a>Credit: Goodkatz</a>
+                <a href="#">Address: Hong Kong</a><br>
+                <a href="mailto:experimentalfish123@gmail.com">Email: experimentalfish123@gmail.com</a><br>
+                <a href="#">Credit: Goodkatz</a><br>
+                <a href="#">Sponsors: Winnie & Max</a>
             </p>
         </div>
-</main>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 
 </html>
