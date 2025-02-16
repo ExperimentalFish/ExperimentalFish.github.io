@@ -311,6 +311,10 @@ ul {
 	.de-footer{
 		display: none;
 	}
+
+	.desktop-footer{
+		display: none;
+	}
 }
 
 main {
