@@ -69,7 +69,7 @@ header {
 	height: 65vh;
 	width: 100%;
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 .flex,
@@ -229,16 +229,25 @@ ul {
 		overflow: hidden;
 		white-space: nowrap
 	}
+	
+	.menu-toggle {
+		display: none
+	}
+	
+	.mobile-footer{
+		display: none;
+	}
 }
-
-.menu-toggle {
-	display: none
-}
-
 @media all and (max-width: 1000px) {
 	.navbar {
 		background: none;
 		position: relative
+	}
+
+	.inner-header{
+		h1{
+			display: None;
+		}
 	}
 
 	.menu-toggle {
@@ -297,6 +306,10 @@ ul {
 
 	.menu-items li a:hover {
 		color: #00acc1
+	}
+
+	.de-footer{
+		display: none;
 	}
 }
 
