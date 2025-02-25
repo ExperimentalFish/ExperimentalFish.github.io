@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>~~~ Final Lesson ~~~</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f2f2f2;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Final Lesson</h1>
+    <p>Hope you have fun in this challenge, good luck in HKDSE Exam...</p>
+    <p><strong>Encrypted code:</strong> <span id="encrypted"></span></p>
+    <p>Enter your guess:</p>
+    <input type="text" id="guess" placeholder="Enter your guess here">
+    <button onclick="checkGuess()">Submit Guess</button>
+    <div id="message"></div>
+  </div>
+
+  <script>
+    const _0x346b6c=_0x5020;(function(_0x62eaa6,_0x48828d){const _0x27d26e=_0x5020,_0x4f8596=_0x62eaa6();while(!![]){try{const _0x20f455=-parseInt(_0x27d26e(0x1ae))/0x1+-parseInt(_0x27d26e(0x1ba))/0x2+parseInt(_0x27d26e(0x1b8))/0x3+parseInt(_0x27d26e(0x1b7))/0x4+-parseInt(_0x27d26e(0x1af))/0x5*(-parseInt(_0x27d26e(0x1a7))/0x6)+parseInt(_0x27d26e(0x1bf))/0x7*(parseInt(_0x27d26e(0x1aa))/0x8)+-parseInt(_0x27d26e(0x1b3))/0x9*(parseInt(_0x27d26e(0x1bc))/0xa);if(_0x20f455===_0x48828d)break;else _0x4f8596['push'](_0x4f8596['shift']());}catch(_0x147759){_0x4f8596['push'](_0x4f8596['shift']());}}}(_0x9047,0xe684f));const EXTENDED_ALPHABET=_0x346b6c(0x1b0);function _0x9047(){const _0x953543=['7202552gixAfK','5620215YXKqSp','length','694280eqoxXI','reload','150GDDMBp','innerText','join','6142423lIEFYY','value','YSBzZWNyZXQgcGFzc2FnZQ==.html','24bUgKuK','reverse','location','16HQjYRs','message','getElementById','push','478563NLnHjQ','1417430UqDUwm','0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/','charCodeAt','slice','2875833NFJTBT','href','Access\x20denied','split'];_0x9047=function(){return _0x953543;};return _0x9047();}function generateDigits(_0x4819ee){const _0x23baae=_0x346b6c;return EXTENDED_ALPHABET[_0x23baae(0x1b2)](0x0,_0x4819ee)[_0x23baae(0x1b6)]('');}function _0x5020(_0x3f1c85,_0x2089a2){const _0x904743=_0x9047();return _0x5020=function(_0x502043,_0x58215b){_0x502043=_0x502043-0x1a7;let _0x2e5116=_0x904743[_0x502043];return _0x2e5116;},_0x5020(_0x3f1c85,_0x2089a2);}function textToBase(_0x5902f6,_0x45bc40){const _0x1c17dc=_0x346b6c;let _0x4619de='';for(let _0x4f4bfd=0x0;_0x4f4bfd<_0x5902f6[_0x1c17dc(0x1b9)];_0x4f4bfd++){let _0x4ad6fa=_0x5902f6[_0x1c17dc(0x1b1)](_0x4f4bfd),_0x3deef2=[];while(_0x4ad6fa>0x0){const _0x5501ab=generateDigits(_0x45bc40);_0x3deef2[_0x1c17dc(0x1ad)](_0x5501ab[_0x4ad6fa%_0x45bc40]),_0x4ad6fa=Math['floor'](_0x4ad6fa/_0x45bc40);}while(_0x3deef2[_0x1c17dc(0x1b9)]<0x2){const _0x2fd35c=generateDigits(_0x45bc40);_0x3deef2['push'](_0x2fd35c[0x0]);}_0x4619de+=_0x3deef2[_0x1c17dc(0x1a8)]()[_0x1c17dc(0x1be)]('');}return _0x4619de;}const secretText=_0x346b6c(0x1b5),base=Math['floor'](Math['random']()*(0x40-0x2+0x1))+0x2,encryptedText=textToBase(secretText,base);document[_0x346b6c(0x1ac)]('encrypted')[_0x346b6c(0x1bd)]=''+encryptedText;function checkGuess(){const _0x2939fe=_0x346b6c,_0x3126bf=document['getElementById']('guess')[_0x2939fe(0x1c0)],_0x554e20=document[_0x2939fe(0x1ac)](_0x2939fe(0x1ab));_0x3126bf===secretText?window[_0x2939fe(0x1a9)][_0x2939fe(0x1b4)]=_0x2939fe(0x1c1):window[_0x2939fe(0x1a9)][_0x2939fe(0x1bb)]();}
+  </script>
+</body>
+</html>
